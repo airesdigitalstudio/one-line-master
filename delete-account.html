@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account Deletion – One Line Master</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0a0a1a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    .card {
+      background: #13132a;
+      border: 1px solid #2a2a5a;
+      border-radius: 16px;
+      max-width: 660px;
+      width: 100%;
+      padding: 40px 36px;
+    }
+    .logo { font-size: 26px; font-weight: 800; color: #7c6fff; margin-bottom: 4px; }
+    .subtitle { font-size: 13px; color: #6666aa; margin-bottom: 32px; }
+    h1 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    h2 { font-size: 16px; font-weight: 700; color: #fff; margin: 28px 0 12px; }
+    p { font-size: 15px; line-height: 1.7; color: #b0b0cc; margin-bottom: 16px; }
+    .steps { background: #0d0d22; border: 1px solid #2a2a5a; border-radius: 12px; padding: 24px 28px; margin-bottom: 28px; }
+    .steps-title { font-size: 13px; font-weight: 700; color: #7c6fff; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+    .step { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+    .step:last-child { margin-bottom: 0; }
+    .step-num { background: #7c6fff; color: #fff; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    .step-text { font-size: 14px; color: #c0c0dd; line-height: 1.6; }
+    .step-text strong { color: #fff; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
+    th { text-align: left; color: #7c6fff; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px 12px; border-bottom: 1px solid #2a2a5a; }
+    td { padding: 10px 12px; border-bottom: 1px solid #1a1a38; color: #b0b0cc; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .del { background: #2a1a3a; color: #cc77ff; border-radius: 6px; padding: 2px 8px; font-size: 12px; font-weight: 600; }
+    .anon { background: #1a2230; color: #77aacc; border-radius: 6px; padding: 2px 8px; font-size: 12px; font-weight: 600; }
+    .warning { background: #1a1200; border: 1px solid #554400; border-radius: 10px; padding: 16px 20px; font-size: 13px; color: #ccaa44; margin-bottom: 24px; line-height: 1.6; }
+    .contact { background: #0d0d22; border: 1px solid #2a2a5a; border-radius: 12px; padding: 20px 24px; font-size: 14px; color: #b0b0cc; }
+    .contact a { color: #7c6fff; }
+    .footer { margin-top: 32px; font-size: 12px; color: #44446a; text-align: center; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">✏️ One Line Master</div>
+  <div class="subtitle">Account and data deletion policy</div>
+  <h1>Delete my account</h1>
+  <p>You can request the deletion of your account and all associated data at any time, for free, directly within the app or by email. See below how to do it and what happens to each type of data.</p>
+  <div class="steps">
+    <div class="steps-title">How to delete your account in the app</div>
+    <div class="step"><div class="step-num">1</div><div class="step-text">Open <strong>One Line Master</strong> on your device.</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text">Go to your <strong>Profile</strong> or open the <strong>Settings</strong> menu.</div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text">Scroll to the bottom and tap <strong>"Delete my account"</strong>.</div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-text">Confirm the action. Deletion is <strong>immediate and irreversible</strong>.</div></div>
+  </div>
+  <h2>What happens to your data</h2>
+  <p>When you delete your account, your data is handled as follows:</p>
+  <table>
+    <thead><tr><th>Data type</th><th>What happens</th><th>Timeframe</th></tr></thead>
+    <tbody>
+      <tr><td>Profile (username, avatar, country)</td><td><span class="del">Deleted</span></td><td>Immediately</td></tr>
+      <tr><td>Email linked to your account</td><td><span class="del">Deleted</span></td><td>Within 30 days</td></tr>
+      <tr><td>Wallet (coins, gems, Elite Pass, boosters)</td><td><span class="del">Deleted</span></td><td>Immediately</td></tr>
+      <tr><td>Personal level records</td><td><span class="del">Deleted</span></td><td>Immediately</td></tr>
+      <tr><td>Friends list and challenges</td><td><span class="del">Deleted</span></td><td>Immediately</td></tr>
+      <tr><td>Purchased avatars and skins</td><td><span class="del">Deleted</span></td><td>Immediately</td></tr>
+      <tr><td>Public global records (leaderboard)</td><td><span class="anon">Anonymized</span></td><td>Within 30 days</td></tr>
+      <tr><td>Hall of Fame (historical records)</td><td><span class="anon">Anonymized</span></td><td>Kept without identification</td></tr>
+    </tbody>
+  </table>
+  <div class="warning">⚠️ <strong>Warning:</strong> Deletion is permanent and cannot be undone. All your points, achievements, Elite Pass and virtual currencies will be permanently lost. In-app purchases are non-refundable after account deletion.</div>
+  <h2>Prefer to request by email?</h2>
+  <div class="contact">
+    If you cannot access the app, send an email to
+    <a href="mailto:[Suporte.ai](https://Suporte.ai)resdigital@[gmail.com](https://gmail.com)">[Suporte.ai](https://Suporte.ai)resdigital@[gmail.com](https://gmail.com)</a>
+    with the subject <em>"Account Deletion – One Line Master"</em> and include your <strong>username</strong>.
+    We will process your request within <strong>5 business days</strong>.
+  </div>
+  <div class="footer">One Line Master &nbsp;·&nbsp; Privacy Policy available on the app's Google Play page</div>
+</div>
+</body>
+</html>
